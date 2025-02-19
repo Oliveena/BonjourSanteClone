@@ -1,0 +1,28 @@
+dailyscrum.txt 
+
+2025/02/20 Ana
+1. Done / not done since last scrum:
+- did the Class Diagram
+- created dailyscrum.txt
+- working on MySQL tables
+- working on UML Diagram
+
+2. To do until next Scrum:
+- finish the proposal Word doc
+- come up with 2 questions for lecturer
+
+3. Need assistance / figure things out
+- need approval of finished proposal before discussion with lecturer
+
+2025/02/20 Trang
+1. Done since last scrum
+- did description for project
+- took screenshots of BonjourSante
+- set up GitHub repo
+- created Trello board
+
+2. Plan until next Scrum
+- come up with 2 questions for lecturer
+
+3. Need assistance / figure things out
+- need to approve finished proposal before discussion with lecturer
