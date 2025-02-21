@@ -26,3 +26,29 @@ dailyscrum.txt
 
 3. Need assistance / figure things out
 - need to approve finished proposal before discussion with lecturer
+
+=================================================================
+
+2025/02/21 Ana: 
+1. Done since last scrum
+- HTML for 
+- CSS for all pages
+- Bootstrap for all pages, including modals
+- watched videos
+
+2. Plan until next Scrum
+- validate HTML/CSS with team members
+- help out with 
+
+3. Need assistance / figure things out
+
+2025/02/21 Trang: 
+1. Done since last scrum
+2. Plan until next Scrum
+3. Need assistance / figure things out
+
+2025/02/21 Dang: 
+1. Done since last scrum
+2. Plan until next Scrum
+3. Need assistance / figure things out
+
