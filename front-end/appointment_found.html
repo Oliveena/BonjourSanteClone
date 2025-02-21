@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Found</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <img src="img/bonjour-sante.inline.svg" alt="medical team of the clinic" class="img-fluid">
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Appointment Found</h1>
+        <p class="text-center">Congratulations! We have found an appointment that fits your criteria.</p>
+
+        <!-- Appointment Summary Card -->
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Appointment Details</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Date:</strong> <span id="appointmentDate">2025-02-25</span></p>
+                        <p><strong>Time:</strong> <span id="appointmentTime">10:00 AM</span></p>
+                        <p><strong>Duration:</strong> <span id="appointmentDuration">30 minutes</span></p> <!-- Added Duration -->
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Clinic Name:</strong> <span id="clinicName">HealthCare Clinic</span></p>
+                        <p><strong>Clinic Address:</strong> <span id="clinicAddress">1234 Main St, Cityville</span></p>
+                    </div>
+                </div>
+                <p><strong>Doctor:</strong> <span id="doctorName">Dr. Jane Smith</span></p>
+                <p><strong>Type of Appointment:</strong> <span id="appointmentType">General Checkup</span></p>
+            </div>
+        </div>
+
+        <!-- Button to send reminder -->
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" onclick="sendReminder()">Send Reminder to Email</button>
+        </div>
+    </div>
+
+    <!--we can link with /appointments to display updated list of appointments-->
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-light py-3 text-center">
+        <p>Contact us: info@bonjour-sante.com | +123 456 7890</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function sendReminder() {
+            // Add your email sending logic here
+            alert("Reminder sent to your email!");
+        }
+    </script>
+</body>
+</html>

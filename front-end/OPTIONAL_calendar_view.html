@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Upcoming Clinics (Daily Appointments for Dr)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-light bg-light">
+        <img src="img/bonjour-sante.inline.svg" id="inline" alt="medical team of the clinic" class="img-fluid">
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1>List of Upcoming Clinics</h1>
+        <h2 id="today-date">Today's Date: <span class="date-placeholder">March 15, 2025</span></h2> <!-- Static date for now -->
+        <p>Welcome, <span id="doctor-name">Dr. Blorb Blurb</span></p>
+        <p>Here is the list of patients for today:</p>
+
+        <!--opttionnally, we can make them draggable and droppable, so the doc can rearrange the schedule as they will-->
+        <!--clicking on a pt's name should hyperlink to patient's profile-->
+        <!-- Patient Appointment Table -->
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Patient Name</th>
+                    <th>Patient Surname</th>
+                    <th>Patient Gender</th>
+                    <th>Date of Birth</th>
+                    <th>RAMQ</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Static row for now, will be populated dynamically via JS or AJAX later -->
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Emily</td>
+                    <td>Davis</td>
+                    <td>Female</td>
+                    <td>02/10/1990</td>
+                    <td>1234567890</td>
+                    <td><button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#appointmentModal">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>10:30 AM</td>
+                    <td>Michael</td>
+                    <td>Wilson</td>
+                    <td>Male</td>
+                    <td>04/14/1985</td>
+                    <td>9876543210</td>
+                    <td><button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#appointmentModal">View Details</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal for Appointment Details -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Appointment Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Medical Note, Signature, and Prescription Form -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="medicalNote" class="form-label">Medical Note</label>
+                            <textarea class="form-control" id="medicalNote" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="doctorSignature" class="form-label">Doctor's Signature</label>
+                            <input type="text" class="form-control" id="doctorSignature" placeholder="Full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="doctorSignature" class="form-label">Prescriber Number</label>
+                            <input type="text" class="form-control" id="doctorSignature" placeholder="Prescriptor number">
+                            </div>
+                        <div class="mb-3">
+                            <label for="newRx" class="form-label">Create New Prescription</label>
+                            <input type="file" class="form-control" id="newRx">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 bg-light py-3 text-center">
+        <p>Contact us: info@bonjour-sante.com | +123 456 7890</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
